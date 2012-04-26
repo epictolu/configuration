@@ -1,0 +1,40 @@
+# Start Keymando at login
+# -----------------------------------------------------------
+start_at_login
+
+# Disable Keymando when using these applications
+# -----------------------------------------------------------
+# disable /VMware/
+# disable "Remote Desktop Connection"
+# disable /VirtualBox/
+
+# Basic mapping
+# -----------------------------------------------------------
+map "<Cmd-e>", "<Escape>"
+map "<Cmd-j>", "<Down>"
+map "<Cmd-k>", "<Up>"
+map "<Cmd-h>", "<Left>"
+map "<Cmd-l>", "<Right>"
+map "<Cmd-b>", "<Alt-Left>"
+map "<Cmd-f>", "<Alt-Right>"
+map "<Cmd-0>", "<Cmd-Left>"
+map "<Cmd-4>", "<Cmd-Right>"
+map "<Cmd- >", run_registered_command
+map "<Cmd-m>", hit_a_hint
+map "<Cmd-d>", current_app_windows
+map "<Cmd-t>", trigger_app
+map "<Cmd-r>", RightClick.instance
+map "<Cmd-.>", RunLastCommand.instance
+
+# Mnemonics
+@universal_mappings = {
+	"rel" => lambda { reload },
+}
+
+map "<Cmd-i>" do
+	input(@universal_mappings)
+end
+
+# -----------------------------------------------------------
+# Visit http://keymando.com to see what Keymando can do!
+# -----------------------------------------------------------

@@ -1,0 +1,5 @@
+[user]
+	name = Epic Tolu
+	email = epictolu@hotmail.com
+[core]
+	editor = vim -f
