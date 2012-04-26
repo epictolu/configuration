@@ -5,7 +5,7 @@ ZSH=$HOME/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="epic"
+ZSH_THEME="epictolu"
 
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
@@ -52,16 +52,18 @@ alias goto_utilities="/Volumes/OWC\ HD/utilities"
 alias look_for="find . -name"
 
 # Configuration file aliases
-alias zshConfig="mvim ~/.zshrc"
-alias vimConfig="mvim ~/.vimrc"
-alias gitConfig="mvim ~/.gitconfig"
-alias keymandoConfig="mvim ~/.keymandorc"
-alias vundleConfig="mvim ~/.vundlerc"
+alias zshConfig="vi ~/.zshrc"
+alias vimConfig="vi ~/.vimrc"
+alias gitConfig="vi ~/.gitconfig"
+alias keymandoConfig="vi ~/.keymandorc"
+alias vundleConfig="vi ~/.vundlerc"
 
 # Git aliases
 alias ga="git add"
 alias gb="git branch"
-alias gci="git commit"
+alias gci="git add -A; git commit"
+alias gcia="git add -A; git commit --amend"
+alias gcim="git add -A; git commit -m"
 alias gco="git checkout"
 alias gd="git diff"
 alias gl="git log"
