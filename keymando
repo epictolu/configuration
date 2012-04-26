@@ -19,8 +19,8 @@ map "<Cmd-b>", "<Alt-Left>"
 map "<Cmd-f>", "<Alt-Right>"
 map "<Cmd-0>", "<Cmd-Left>"
 map "<Cmd-4>", "<Cmd-Right>"
+map "<Cmd-u>", "_"
 map "<Cmd- >", run_registered_command
-map "<Cmd-m>", hit_a_hint
 map "<Cmd-d>", current_app_windows
 map "<Cmd-t>", trigger_app
 map "<Cmd-r>", RightClick.instance
