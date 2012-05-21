@@ -45,12 +45,12 @@ alias cp="cp -r"
 alias rm="rm -r"
 
 # Configuration file aliases
-alias zshConfig="vi ~/.zshrc"
-alias vimConfig="vi ~/.vimrc"
-alias gitConfig="vi ~/.gitconfig"
-alias keymandoConfig="vi ~/.keymandorc"
-alias vundleConfig="vi ~/.vundlerc"
-alias keymandoPlugins="vi ~/keymando_plugins"
+alias zsh_config="vi ~/.zshrc"
+alias vim_config="vi ~/.vimrc"
+alias git_config="vi ~/.gitconfig"
+alias keymando_config="vi ~/.keymandorc"
+alias vundle_config="vi ~/.vundlerc"
+alias keymando_plugins="vi ~/keymando_plugins"
 
 # Git aliases
 alias ga="git add"
