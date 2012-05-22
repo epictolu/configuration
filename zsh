@@ -48,9 +48,9 @@ alias rm="rm -r"
 alias zsh_config="vi ~/.zshrc"
 alias vim_config="vi ~/.vimrc"
 alias git_config="vi ~/.gitconfig"
-alias keymando_config="vi ~/.keymandorc"
+alias keymando_config="vi ~/github/configuration/keymando"
 alias vundle_config="vi ~/.vundlerc"
-alias keymando_plugins="vi ~/keymando_plugins"
+alias keymando_plugins="vi ~/github/keymando_files/keymando/plugins"
 
 # Git aliases
 alias ga="git add"
@@ -72,4 +72,6 @@ alias gsci="git svn dcommit"
 alias gsco="git svn rebase"
 alias gu="git update"
 
+# Directory aliases
+alias sp2010="cd ~/mounts/sp2010"
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting

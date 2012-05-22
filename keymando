@@ -25,6 +25,7 @@ map "<Cmd-d>", current_app_windows
 map "<Cmd-t>", trigger_app
 map "<Cmd-r>", RightClick.instance
 map "<Cmd-.>", RunLastCommand.instance
+map "<Cmd-;>", launch_app
 
 # Mnemonics
 @universal_mappings = {

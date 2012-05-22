@@ -15,13 +15,13 @@ Bundle 'gmarik/vundle'
 " Bundle 'Lokaltog/vim-easymotion'
 " Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
 " Bundle 'tpope/vim-rails.git'
-Bundle 'msanders/snipmate.vim'
+" Bundle 'scrooloose/syntastic'
+" Bundle 'scrooloose/nerdtree'
+" Bundle 'msanders/snipmate.vim'
+" Bundle 'xolox/vim-easytags'
 Bundle 'tpope/vim-surround'
 Bundle 'ervandew/supertab'
-Bundle 'scrooloose/syntastic'
-Bundle 'xolox/vim-easytags'
 Bundle 'wincent/Command-T'
-Bundle 'scrooloose/nerdtree'
 
 " vim-scripts repos
 " Bundle 'L9'

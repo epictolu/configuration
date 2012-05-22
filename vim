@@ -34,21 +34,45 @@ let mapleader = ","
 " Command mode mappings
 cmap <leader>p <c-r>*
 
+" Navigation
+nmap <c-h> <c-w>h
+nmap <c-j> <c-w>j
+nmap <c-k> <c-w>k
+nmap <c-l> <c-w>l
+nmap <leader><leader> <c-^>
+
 " Normal mode mappings
-nmap <leader>w <c-w>
-nmap <leader>o :CommandT<cr>
-nmap <leader>t :NERDTreeFind<cr>
-nmap <leader>n :cn<cr>
-nmap <leader>p :cp<cr>
+nmap <leader>of :CommandT<cr>
+nmap <leader>ob :CommandTBuffer<cr>
 nmap <leader>b i{<cr>}<esc>O
 nmap <space> <c-f>
 nmap <leader><space> <c-b>
 
 " Insert mode mappings
-imap <leader>p <esc>pa
+imap <leader>p <c-r>*
 imap <leader>b {<cr>}<esc>O
+
+" File 
+nmap <leader>mv :call RenameFile()<cr>
+nmap <leader>e :e <c-r>=expand("%:h")<cr>/
+
+" C#
+imap <leader>cu <esc>ggOusing ;<left>
+imap <leader>cc public class <c-r>=expand("%:t:r")<cr><cr>,b
+imap <leader>ci public interface <c-r>=expand("%:t:r")<cr><cr>,b
 
 source ~/.vundlerc
 
-" NERDTree Configuration
-let NERDTreeQuitOnOpen=1
+" Functions
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" RENAME CURRENT FILE
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+function! RenameFile()
+    let old_name = expand('%')
+    let new_name = input('New file name: ', expand('%'), 'file')
+    if new_name != '' && new_name != old_name
+        exec ':saveas ' . new_name
+        exec ':silent !rm ' . old_name
+        redraw!
+    endif
+endfunction
